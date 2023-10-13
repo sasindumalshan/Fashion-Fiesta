@@ -1,0 +1,16 @@
+.Background{
+    -fx-background-color: #37306B;
+}
+.LoginButtom{
+    -fx-background-color: #253031;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 20;
+}
+.text-field-login{
+    -fx-border-color: #ffffff;
+    -fx-prompt-text-fill: #3d3c3c;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}

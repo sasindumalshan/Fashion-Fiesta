@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="592.0" prefWidth="1095.0" stylesheets="@../style/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.SalaryFormController">
+   <children>
+      <TableView fx:id="tblSalary" layoutX="18.0" layoutY="146.0" prefHeight="422.0" prefWidth="757.0">
+        <columns>
+          <TableColumn fx:id="colEmployeeId" prefWidth="151.0" text="Employee Id" />
+            <TableColumn fx:id="ColSalaryId" prefWidth="151.0" text="Salary Id" />
+            <TableColumn fx:id="colDate" prefWidth="151.0" text="Date" />
+            <TableColumn fx:id="colSalary" prefWidth="151.0" text="Salary" />
+            <TableColumn fx:id="colAttendance" prefWidth="151.0" text="Attendance" />
+        </columns>
+      </TableView>
+      <Text layoutX="109.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="788.0" layoutY="-1.0" prefHeight="616.0" prefWidth="320.0" style="-fx-background-color: #53465D; -fx-background-radius: 50 0 0 50;" styleClass="option-button">
+         <children>
+            <ImageView fitHeight="294.0" fitWidth="310.0" layoutX="32.0" layoutY="328.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/desktopIcon/5685765_54783-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnDone" layoutX="172.0" layoutY="456.0" onAction="#btnDoneOnaction" prefHeight="31.0" prefWidth="98.0" styleClass="btn-update" stylesheets="@../style/EmployeeForm.css" text="Done">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="42.0" layoutY="209.0" prefHeight="38.0" prefWidth="66.0" style="-fx-text-fill: #fff;" text="Name : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text fx:id="txtName" layoutX="108.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #fff;" wrappingWidth="177.00001588463783">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtNetSalary" fill="WHITE" layoutX="170.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="119.2539089769125">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="cmbEmployeeId" layoutX="42.0" layoutY="160.0" onAction="#cmbEmployeeIdOnAction" prefHeight="27.0" prefWidth="207.0" promptText="Employee Id" styleClass="txtF" />
+            <JFXTextField fx:id="txtDailySalary" alignment="CENTER" layoutX="42.0" layoutY="301.0" prefHeight="27.0" prefWidth="207.0" promptText="Daily Salary" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXTextField fx:id="txtBonus" alignment="CENTER" layoutX="42.0" layoutY="355.0" prefHeight="27.0" prefWidth="207.0" promptText="Bonus" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <Text fill="WHITE" layoutX="42.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Salary  : Rs." wrappingWidth="127.99998164176941">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnApply" layoutX="51.0" layoutY="456.0" onAction="#btnApplyOnAction" prefHeight="31.0" prefWidth="98.0" styleClass="btn-add" stylesheets="@../style/EmployeeForm.css" text="Apply">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="42.0" layoutY="247.0" prefHeight="38.0" prefWidth="128.0" style="-fx-text-fill: #fff;" text="Attendandence :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text fx:id="txtAttendance" fill="WHITE" layoutX="183.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="56.983081847429276">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="63.0" fitWidth="81.0" layoutX="37.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/29119178_Gold%20coins%20and%20banknotes%203d%20cartoon%20style%20icon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="813.0" prefWidth="1243.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.RepoartFormController">
+   <children>
+      <AnchorPane layoutX="842.0" prefHeight="814.0" prefWidth="399.0" style="-fx-background-color: #53465D; -fx-background-radius: 50; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+         <children>
+            <ImageView fitHeight="286.0" fitWidth="316.0" layoutX="87.0" layoutY="505.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/—Pngtree—shopping%20cart_1459647.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="28.0" layoutY="359.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="313.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Today Empolyee Attendance">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="239.0" layoutY="63.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+                     <children>
+                        <Label fx:id="txtEmpAtt" layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton layoutX="14.0" layoutY="71.0" onAction="#btnSupplierOrderOnAction" prefHeight="41.0" prefWidth="145.0" styleClass="btn-delete" text="Supplier Order">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="28.0" layoutY="214.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="220.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Total Supplier Order">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="239.0" layoutY="63.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+                     <children>
+                        <Label fx:id="txtSuppOrder" layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton layoutX="14.0" layoutY="74.0" onAction="#btnEmployeeAttendanceOnAction" prefHeight="41.0" prefWidth="145.0" styleClass="btn-add" text="Today Attendance">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="28.0" layoutY="74.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="16.0" prefHeight="37.0" prefWidth="220.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Total Customer Order">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="239.0" layoutY="63.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+                     <children>
+                        <Label fx:id="txtSalary" layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnSalary" layoutX="14.0" layoutY="71.0" onAction="#btnSalaryOnAction" prefHeight="41.0" prefWidth="145.0" styleClass="btn-add" text="Salary">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="28.0" layoutY="508.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="313.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Today Empolyee Attendance">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="239.0" layoutY="64.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+                     <children>
+                        <Label fx:id="txtTodayCrustOrder" layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton layoutX="14.0" layoutY="71.0" onAction="#btnCustomerOrderOnAction" prefHeight="41.0" prefWidth="145.0" styleClass="btn-delete" text="Customer Order">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="61.0" layoutY="45.0" prefHeight="191.0" prefWidth="719.0" style="-fx-background-color: #F67E7E; -fx-background-radius: 50;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+         <children>
+            <Label layoutX="235.0" layoutY="41.0" prefHeight="48.0" prefWidth="139.0" style="-fx-text-fill: #fff; -fx-font-size: 25;" styleClass="dash-bord-text" text="Good Job!">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="248.0" layoutY="113.0" prefHeight="19.0" prefWidth="214.0" style="-fx-text-fill: #fff; -fx-font-size: 13;" styleClass="dash-bord-text2" text="You have over 20 000 vistor in the">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="245.0" layoutY="139.0" prefHeight="19.0" prefWidth="190.0" style="-fx-text-fill: #fff; -fx-font-size: 13;" styleClass="dash-bord-text2" text=" lost 10 day.keep it up!">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="271.0" fitWidth="268.0" layoutX="20.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/—Pngtree—daily%20shopping%20cart_5398373.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="213.0" fitWidth="214.0" layoutX="491.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/—Pngtree—shopping%20cart_1459647.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AreaChart fx:id="chart" layoutX="54.0" layoutY="314.0" prefHeight="400.0" prefWidth="719.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+   <stylesheets>
+      <URL value="@../style/DashboardForm.css" />
+      <URL value="@../style/EmployeeForm.css" />
+   </stylesheets>
+</AnchorPane>

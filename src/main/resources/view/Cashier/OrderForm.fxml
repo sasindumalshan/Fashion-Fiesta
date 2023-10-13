@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="808.0" prefWidth="1254.0" style="-fx-background-color: #fff; -fx-background-radius: 50;" stylesheets="@../../style/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.OrderFormController">
+   <children>
+      <JFXButton fx:id="btnDone" layoutX="1019.0" layoutY="333.0" onAction="#btnDoneOnAction" prefHeight="40.0" prefWidth="140.0" styleClass="btn-update" stylesheets="@../../style/EmployeeForm.css" text="Done">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblSupplierOrder" layoutX="127.0" layoutY="394.0" prefHeight="394.0" prefWidth="1021.0">
+         <columns>
+            <TableColumn fx:id="coltemId" prefWidth="204.0" text="Item id" />
+            <TableColumn fx:id="colCustomerOrderId" minWidth="0.0" prefWidth="164.0" text="Customer Order Id" />
+            <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="164.0" text="Date" />
+            <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="164.0" text="Price" />
+            <TableColumn fx:id="colQty" minWidth="0.0" prefWidth="164.0" text="Qty" />
+            <TableColumn fx:id="colPayment" minWidth="0.0" prefWidth="164.0" text="Payment" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="CustomerOrderId" alignment="CENTER" layoutX="383.0" layoutY="326.0" opacity="0.57" prefHeight="31.0" prefWidth="239.0" promptText="Customer Order Id" visible="false" />
+      <JFXTextField fx:id="txtSearch" alignment="CENTER" layoutX="341.0" layoutY="45.0" onKeyReleased="#searchKeyReleased" prefHeight="40.0" prefWidth="626.0" promptText="Search" styleClass="searchBar" stylesheets="@../../style/EmployeeForm.css" unFocusColor="WHITE" />
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="920.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icons8-search-24.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="115.0" layoutY="353.0" prefHeight="21.0" prefWidth="108.0" text="Total">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" layoutX="856.0" layoutY="334.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="129.0" styleClass="btn-add" stylesheets="@../../style/EmployeeForm.css" text="Add">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="txtTotal" layoutX="234.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="148.6708984375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="115.0" layoutY="123.0" prefHeight="62.0" prefWidth="1067.0" style="-fx-background-color: #FDCB62;" styleClass="form-box2">
+         <children>
+            <JFXComboBox fx:id="CustomerId" layoutX="36.0" layoutY="12.0" prefHeight="31.0" prefWidth="219.0" promptText="Customer Id" styleClass="txtF" />
+         </children>
+      </Pane>
+      <Pane layoutX="115.0" layoutY="211.0" prefHeight="106.0" prefWidth="1067.0" style="-fx-background-color: #53465D;" styleClass="form-box2" stylesheets="@../../style/EmployeeDashBord.css">
+         <children>
+            <JFXComboBox fx:id="itemId" layoutX="24.0" layoutY="13.0" onAction="#cmbItemIdOnAction" prefHeight="31.0" prefWidth="219.0" promptText="Item Id" styleClass="txtF" />
+            <JFXTextField fx:id="txtQty" alignment="CENTER" layoutX="295.0" layoutY="60.0" onKeyReleased="#qtyKeyReleased" prefHeight="31.0" prefWidth="239.0" promptText="Qty" styleClass="txtF" />
+            <JFXTextField fx:id="price" alignment="CENTER" disable="true" layoutX="24.0" layoutY="60.0" opacity="0.57" prefHeight="31.0" prefWidth="239.0" promptText="Price" styleClass="txtF" />
+         </children>
+      </Pane>
+      <Label layoutX="149.0" layoutY="57.0" prefHeight="25.0" prefWidth="191.0" style="-fx-text-fill: #000; -fx-font-size: 20;" styleClass="view-employee-details-text-2" text="Customeer Order">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="120.0" layoutX="29.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/PngItem_6306185.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="120.0" layoutX="29.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/PngItem_6306185.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

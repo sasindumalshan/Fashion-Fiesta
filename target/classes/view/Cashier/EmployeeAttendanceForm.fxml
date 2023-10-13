@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="808.0" prefWidth="1289.0" style="-fx-background-radius: 50; -fx-background-color: #fff;" stylesheets="@../../style/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.EmployeeAttendanceController">
+   <children>
+      <JFXTextField fx:id="txtSearch" alignment="CENTER" layoutX="441.0" layoutY="48.0" onKeyReleased="#searchKeyReleased" prefHeight="40.0" prefWidth="452.0" promptText="Search" styleClass="searchBar" stylesheets="@../../style/EmployeeForm.css" unFocusColor="WHITE" />
+      <ImageView fitHeight="23.0" fitWidth="18.0" layoutX="859.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icons8-search-24.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtid" alignment="CENTER" layoutX="36.0" layoutY="114.0" onAction="#enterOnAction" prefHeight="35.0" prefWidth="206.0" promptText="Enter Id" styleClass="searchBar" stylesheets="@../../style/EmployeeForm.css" unFocusColor="WHITE" />
+      <TableView fx:id="EmployeeAttendanceTbl" layoutX="99.0" layoutY="282.0" onMouseClicked="#tblMouseClick" prefHeight="503.0" prefWidth="1095.0">
+         <columns>
+            <TableColumn fx:id="tblId" prefWidth="146.0" text="Employee Id" />
+            <TableColumn fx:id="tblFirstNameCol" prefWidth="235.0" text="First Name" />
+            <TableColumn fx:id="tblLastNameCol" prefWidth="242.0" text="Last Name" />
+            <TableColumn fx:id="tblTimeCol" prefWidth="245.0" text="Time" />
+            <TableColumn fx:id="tblDateCol" prefWidth="226.0" text="Date" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="689.0" layoutY="114.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+         <children>
+            <Label layoutX="17.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" style="-fx-text-fill: #000; -fx-font-size: 14;" styleClass="dash-bord-text2" text="Today Attendance">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtCustomer1" layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="117.0" fitWidth="130.0" layoutX="806.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="972.0" layoutY="115.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+         <children>
+            <Label layoutX="17.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" style="-fx-text-fill: #000; -fx-font-size: 14;" styleClass="dash-bord-text2" text="All Employee">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtCustomer" layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="117.0" fitWidth="130.0" layoutX="1089.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/pngegg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="134.0" layoutY="51.0" prefHeight="25.0" prefWidth="191.0" style="-fx-text-fill: #000; -fx-font-size: 20;" styleClass="view-employee-details-text-2" text="Attendance">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="120.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/PngItem_6306185.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

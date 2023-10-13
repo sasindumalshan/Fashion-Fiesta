@@ -1,0 +1,26 @@
+.Background{
+    -fx-background-color: #F5C6EC;
+}
+
+.Background{
+    -fx-background-color:#22cce2 ;
+}
+
+.Background2{
+    -fx-background-color:#5BC0F8;
+}
+.lable{
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian ,#000000,10,0.1,0,0);
+}
+.btn{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian ,#000000,10,0.1,0,0);
+}
+.btn:hover{
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian ,#ffffff,20,0.1,0,0);
+}
+
+

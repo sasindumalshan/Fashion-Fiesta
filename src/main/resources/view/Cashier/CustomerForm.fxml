@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="808.0" prefWidth="1254.0" style="-fx-background-color: white;" stylesheets="@../../style/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.CustomerFormController">
+   <children>
+      <JFXTextField fx:id="txtSearch" alignment="CENTER" layoutX="269.0" layoutY="42.0" onKeyReleased="#searchKeyReleased" prefHeight="40.0" prefWidth="400.0" promptText="Search" styleClass="searchBar" stylesheets="@../../style/EmployeeForm.css" unFocusColor="WHITE" />
+      <ImageView fitHeight="23.0" fitWidth="19.0" layoutX="618.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icons8-search-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="59.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icons8-manager-50.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="CustomerTbl" layoutX="37.0" layoutY="343.0" onMouseClicked="#tblMouseClick" prefHeight="445.0" prefWidth="827.0" styleClass="table-view2" stylesheets="@../../style/EmployeeDashBord.css">
+         <columns>
+            <TableColumn fx:id="tblCustId" prefWidth="121.0" text="Customer id" />
+            <TableColumn fx:id="tblFirstName" prefWidth="171.0" text="First Name" />
+            <TableColumn fx:id="tblLastName" prefWidth="159.0" text="Last Name" />
+            <TableColumn fx:id="tblCity" prefWidth="154.0" text="City" />
+            <TableColumn fx:id="tblContactNumber" prefWidth="207.0" text="Contact" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="59.0" layoutY="129.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+         <children>
+            <Label layoutX="17.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" style="-fx-text-fill: #000; -fx-font-size: 14;" styleClass="dash-bord-text2" text="Today Order">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtCustomerUk" layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="117.0" fitWidth="130.0" layoutX="176.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="293.0" layoutY="129.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+         <children>
+            <Label layoutX="17.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" style="-fx-text-fill: #000; -fx-font-size: 14;" styleClass="dash-bord-text2" text="All Customer">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtCustomer1" layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="117.0" fitWidth="130.0" layoutX="410.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/desktopIcon/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="872.0" layoutY="7.0" prefHeight="800.0" prefWidth="384.0" style="-fx-background-color: #53465D; -fx-background-radius: 50; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+         <children>
+            <ImageView fitHeight="286.0" fitWidth="316.0" layoutX="87.0" layoutY="505.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Icon/—Pngtree—shopping%20cart_1459647.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtFirstName" alignment="CENTER" layoutX="14.0" layoutY="151.0" onKeyReleased="#firstNameKeyReleased" prefHeight="31.0" prefWidth="164.0" promptText="First name" styleClass="txtF" unFocusColor="#ffffff00" />
+            <JFXTextField fx:id="txtLastName" alignment="CENTER" layoutX="193.0" layoutY="151.0" onKeyReleased="#lastNameKeyReleased" prefHeight="31.0" prefWidth="153.0" promptText="Last name" styleClass="txtF" unFocusColor="#ffffff00" />
+            <JFXTextField fx:id="txtContactNumber" alignment="CENTER" layoutX="30.0" layoutY="255.0" onKeyReleased="#contactNumberKeyReleased" prefHeight="31.0" prefWidth="308.0" promptText="Contact number" styleClass="txtF" unFocusColor="#ffffff00" />
+            <JFXTextField fx:id="txtStreet" alignment="CENTER" layoutX="33.0" layoutY="430.0" onKeyReleased="#streetKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="street" styleClass="txtF" unFocusColor="#ffffff00" />
+            <JFXTextField fx:id="txtCity" alignment="CENTER" layoutX="35.0" layoutY="485.0" onKeyReleased="#cityKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="city" styleClass="txtF" unFocusColor="#ffffff00" />
+            <JFXTextField fx:id="txtLane" alignment="CENTER" layoutX="35.0" layoutY="536.0" onKeyReleased="#laneKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="Lane" styleClass="txtF" unFocusColor="#ffffff00" />
+            <Label layoutX="19.0" layoutY="36.0" prefHeight="48.0" prefWidth="228.0" style="-fx-text-fill: #fff; -fx-font-size: 25;" styleClass="dash-bord-text" text="Customer Section">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="108.0" prefHeight="31.0" prefWidth="110.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Name">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="211.0" prefHeight="31.0" prefWidth="171.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Contact Number">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="389.0" prefHeight="31.0" prefWidth="171.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Address">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="update" layoutX="120.0" layoutY="649.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="125.0" styleClass="btn-update" stylesheets="@../../style/EmployeeForm.css" text="Update">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="30.0" prefWidth="116.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="51.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="65.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/Icon/icons8-available-updates-64.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Update" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="remove" layoutX="120.0" layoutY="702.0" onAction="#deleteOnAction" prefHeight="37.0" prefWidth="125.0" styleClass="btn-delete" stylesheets="@../../style/EmployeeForm.css" text="Delete">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="30.0" prefWidth="193.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="7.0" prefWidth="50.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="143.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/Icon/icons8-remove-48%20(1).png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="add" layoutX="120.0" layoutY="598.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="117.0" styleClass="btn-add" stylesheets="@../../style/EmployeeForm.css" text="Add">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="30.0" prefWidth="109.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="54.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="55.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/Icon/icons8-add-64.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD" wrappingWidth="35.23633003234863" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="81.0" layoutY="49.0" prefHeight="25.0" prefWidth="191.0" style="-fx-text-fill: #000; -fx-font-size: 20;" styleClass="view-employee-details-text-2" text="Customer">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

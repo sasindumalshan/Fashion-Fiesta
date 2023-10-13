@@ -1,0 +1,84 @@
+.Background{
+    -fx-background-color:#5BC0F8;
+}
+.Background2{
+    -fx-background-color:#645CBB ;
+}
+
+.btn{
+    -fx-background-color: #348DD8;
+    -fx-background-radius:10;
+    -fx-font-size: 15;
+    -fx-font-weight:bold;
+
+}
+.btn:hover{
+    -fx-font-size: 16;
+    -fx-effect: dropshadow(gaussian ,#348DD8,20,0.1,0,0);
+}
+.box{
+    -fx-background-color: linear-gradient(to top,#22cce2, transparent);
+}
+.txt-color{
+    -fx-text-fill: linear-gradient(to bottom,black 50% , #ffffff);
+}
+.searchBar{
+    -fx-border-color: black;
+    -fx-border-radius: 50;
+    -fx-border-insets: 5;
+    -fx-prompt-text-fill: black;
+    -fx-text-fill:black ;
+    -fx-alignment: center;
+    -fx-font-size:15;
+}
+
+.btn-delete{
+    /*-fx-background-color: #4599E4;*/
+    -fx-text-fill: #BD2B41;
+    -fx-background-radius: 30;
+    -fx-background-color: #EFAFAD;
+    -fx-font-weight: bold;
+
+
+}
+.btn-delete:hover{
+    -fx-background-color: #BD2B41;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 30;
+
+}
+
+.btn-add{
+    /*-fx-background-color: #4599E4;*/
+    -fx-text-fill: #348DD8;
+    -fx-background-radius: 30;
+    -fx-background-color: #ADD1EF;
+    -fx-font-weight: bold;
+
+
+}
+.btn-add:hover{
+    -fx-background-color: #348DD8;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 30;
+
+}
+
+.btn-update{
+    /*-fx-background-color: #4599E4;*/
+    -fx-text-fill: #458764;
+    -fx-background-radius: 30;
+    -fx-background-color: #D0E8DB;
+    -fx-font-weight: bold;
+
+
+}
+.btn-update:hover{
+    -fx-background-color: #458764;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 30;
+
+}

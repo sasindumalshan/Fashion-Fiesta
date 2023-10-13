@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="814.0" prefWidth="1253.0" style="-fx-background-radius: 50; -fx-background-color: #ffff;" stylesheets="@../style/EmployeeDashBord.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.SupplierFormController">
+   <children>
+      <JFXButton layoutX="43.0" layoutY="263.0" onAction="#btnNewOrdersOnAction" prefHeight="45.0" prefWidth="120.0" styleClass="btn-update" stylesheets="@../style/EmployeeForm.css" text="New Orders">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtSearch" alignment="CENTER" layoutX="255.0" layoutY="59.0" onKeyReleased="#searchKeyReleased" prefHeight="45.0" prefWidth="322.0" promptText="Search" styleClass="searchBar" stylesheets="@../style/EmployeeForm.css" unFocusColor="WHITE" />
+      <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="535.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-search-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="127.0" layoutX="21.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/desktopIcon/founisseur.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="EmployeeTbl" layoutX="19.0" layoutY="328.0" onMouseClicked="#tblMouseClick" prefHeight="445.0" prefWidth="791.0">
+         <columns>
+            <TableColumn fx:id="tblId" prefWidth="108.0" text="Supplier id" />
+            <TableColumn fx:id="tblFirstName" prefWidth="159.0" text="First Name" />
+            <TableColumn fx:id="tblLastName" prefWidth="171.0" text="Last Name" />
+            <TableColumn fx:id="tblCity" prefWidth="189.0" text="City" />
+            <TableColumn fx:id="tblContact" prefWidth="159.0" text="Contact" />
+         </columns>
+      </TableView>
+      <Label layoutX="90.0" layoutY="51.0" prefHeight="25.0" prefWidth="191.0" style="-fx-text-fill: #000; -fx-font-size: 20;" styleClass="view-employee-details-text-2" text="Manage Supplier">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="276.0" layoutY="112.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+         <children>
+            <Label layoutX="17.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" style="-fx-text-fill: #000; -fx-font-size: 14;" styleClass="dash-bord-text2" text="Last Order QTY">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Text fx:id="txtSupOrder" layoutX="21.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" styleClass="notification-Num-text" text="+83" wrappingWidth="111.99999421834946" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="112.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+         <children>
+            <Label layoutX="19.0" layoutY="74.0" prefHeight="25.0" prefWidth="110.0" style="-fx-text-fill: #000; -fx-font-size: 14;" styleClass="dash-bord-text2" text="All Supplier">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="93.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 12;" styleClass="dash-bord-text2" text="Attendance">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Text fx:id="txtSupplier" layoutX="19.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" styleClass="notification-Num-text" text="+83" wrappingWidth="111.99999421834946" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="90.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/desktopIcon/Employment-Vector-PNG-Clipart-Background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="130.0" layoutX="393.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/desktopIcon/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="855.0" prefHeight="814.0" prefWidth="399.0" style="-fx-background-color: #53465D; -fx-background-radius: 50; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../style/DashboardForm.css">
+         <children>
+            <ImageView fitHeight="286.0" fitWidth="316.0" layoutX="87.0" layoutY="505.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Icon/—Pngtree—shopping%20cart_1459647.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="36.0" prefHeight="48.0" prefWidth="228.0" style="-fx-text-fill: #fff; -fx-font-size: 25;" styleClass="dash-bord-text" text="Supplier Section">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="108.0" prefHeight="31.0" prefWidth="110.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Name">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="211.0" prefHeight="31.0" prefWidth="171.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Contact Number">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="320.0" prefHeight="31.0" prefWidth="171.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Address">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtLastName1" alignment="CENTER" layoutX="202.0" layoutY="151.0" onKeyReleased="#lastNameKeyReleased" prefHeight="31.0" prefWidth="171.0" promptText="Last name" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXTextField fx:id="txtFirstName1" alignment="CENTER" layoutX="23.0" layoutY="153.0" onKeyReleased="#firstNameKeyReleased" prefHeight="31.0" prefWidth="171.0" promptText="First name" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXTextField fx:id="txtContact1" alignment="CENTER" layoutX="34.0" layoutY="253.0" prefHeight="31.0" prefWidth="322.0" promptText="Contact number" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXTextField fx:id="txtStreet1" alignment="CENTER" layoutX="28.0" layoutY="367.0" onKeyReleased="#streetKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="street" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXTextField fx:id="txtCity1" alignment="CENTER" layoutX="29.0" layoutY="425.0" onKeyReleased="#cityKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="city" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXTextField fx:id="txtLane1" alignment="CENTER" layoutX="32.0" layoutY="483.0" onKeyReleased="#laneKeyReleased" prefHeight="31.0" prefWidth="200.0" promptText="Lane" styleClass="txtF" unFocusColor="#4d4d4d00" />
+            <JFXButton fx:id="add" layoutX="37.0" layoutY="662.0" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="90.0" styleClass="btn-add" stylesheets="@../style/EmployeeForm.css" text="ADD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="delete" layoutX="145.0" layoutY="660.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="90.0" styleClass="btn-delete" stylesheets="@../style/EmployeeForm.css" text="Delete">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="update" layoutX="258.0" layoutY="662.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="98.0" styleClass="btn-update" stylesheets="@../style/EmployeeForm.css" text="Update">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

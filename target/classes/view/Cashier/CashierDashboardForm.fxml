@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="795.0" prefWidth="1528.0" style="-fx-background-color: #ffff;" stylesheets="@../../style/DashboardForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fashionfiesta.controller.CashierDashboardFormController">
+   <children>
+      <AnchorPane prefHeight="808.0" prefWidth="390.0" styleClass="Background2">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="202.0" layoutY="763.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/power-.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutY="301.0" onAction="#btnCustomerOnAction" prefHeight="45.0" prefWidth="256.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="63.0" prefWidth="310.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="69.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="176.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="17.0" minHeight="4.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="172.0" styleClass="dash-bord-text" text="Customer" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../img/desktopIcon/icons8-customer-48.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutY="368.0" onAction="#btnOrderOnAction" prefHeight="45.0" prefWidth="256.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="62.0" prefWidth="306.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="69.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="176.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="17.0" minHeight="4.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="183.0" styleClass="dash-bord-text" text="Orders" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="20.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../img/desktopIcon/icons8-mobile-order-60.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutY="436.0" onAction="#btnStockOnAction" prefHeight="48.0" prefWidth="256.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="66.0" prefWidth="307.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="69.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="176.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="17.0" minHeight="4.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="183.0" styleClass="dash-bord-text" text="Stock" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="17.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../img/desktopIcon/icons8-new-product-60.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="2.0" layoutY="494.0" onAction="#btnAttendanceOnAction" prefHeight="48.0" prefWidth="256.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="67.0" prefWidth="305.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="69.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="176.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="17.0" minHeight="4.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="183.0" styleClass="dash-bord-text" text="Attendance" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../img/desktopIcon/icons8-attendance-100.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <Text fx:id="h" fill="WHITE" layoutX="105.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+               <font>
+                  <Font name="Gadugi" size="65.0" />
+               </font>
+            </Text>
+            <Text fx:id="m" fill="WHITE" layoutX="107.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="33">
+               <font>
+                  <Font name="Gadugi" size="65.0" />
+               </font>
+            </Text>
+            <Text fx:id="dae" fill="WHITE" layoutX="98.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu ,9 May">
+               <font>
+                  <Font name="Gadugi" size="19.0" />
+               </font>
+            </Text>
+            <JFXButton layoutY="556.0" onAction="#homeOnAction" prefHeight="59.0" prefWidth="246.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="62.0" prefWidth="259.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.99999237060547" minWidth="10.0" prefWidth="113.99999237060547" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="145.00000762939453" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="17.0" minHeight="4.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="48.0" prefWidth="139.0" styleClass="dash-bord-text" text="Home" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../img/desktopIcon/icons8-new-product-60.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="80.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="280.0" prefHeight="808.0" prefWidth="1242.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;">
+         <children>
+            <AnchorPane layoutX="808.0" layoutY="17.0" prefHeight="776.0" prefWidth="412.0" style="-fx-background-color: #FDCB62; -fx-background-radius: 50;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <AnchorPane layoutX="28.0" layoutY="610.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="313.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Today Empolyee Attendance">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="20.0" layoutY="65.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="192.0" layoutY="77.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: #000; -fx-font-size: 15;" styleClass="dash-bord-text" text="LKR . 2900000">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="28.0" layoutY="465.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="220.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Total Supplier Order">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="20.0" layoutY="63.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="188.0" layoutY="75.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: #000; -fx-font-size: 15;" styleClass="dash-bord-text" text="LKR . 2900000">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="28.0" layoutY="325.0" prefHeight="126.0" prefWidth="357.0" style="-fx-background-color: #fff; -fx-background-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="16.0" prefHeight="37.0" prefWidth="220.0" style="-fx-text-fill: #53616F; -fx-font-size: 18;" styleClass="dash-bord-text" text="Total Customer Order">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="14.0" layoutY="62.0" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #D0E8DB; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="5.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #458764; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="188.0" layoutY="74.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: #000; -fx-font-size: 15;" styleClass="dash-bord-text" text="LKR . 2900000">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="39.0" layoutY="258.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: #000; -fx-font-size: 20;" styleClass="dash-bord-text2" text="Your Progress">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="68.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: #000; -fx-font-size: 20;" styleClass="dash-bord-text" text="Your Details">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="59.0" fitWidth="46.0" layoutX="53.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" styleClass="image-profile">
+                     <image>
+                        <Image url="@../../img/desktopIcon/kindpng_3947019.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="154.0" layoutY="137.0" prefHeight="37.0" prefWidth="220.0" style="-fx-text-fill: #fff; -fx-font-size: 18;" styleClass="dash-bord-text" text="Nethmi Thathsarani">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#9dee94" layoutX="128.0" layoutY="155.0" radius="9.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label layoutX="154.0" layoutY="166.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: #fff; -fx-font-size: 12;" styleClass="dash-bord-text2" text="Cashier">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="45.0" layoutY="122.0" prefHeight="191.0" prefWidth="719.0" style="-fx-background-color: #F67E7E; -fx-background-radius: 50;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="235.0" layoutY="41.0" prefHeight="48.0" prefWidth="139.0" style="-fx-text-fill: #fff; -fx-font-size: 25;" styleClass="dash-bord-text" text="Good Job!">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="248.0" layoutY="113.0" prefHeight="19.0" prefWidth="214.0" style="-fx-text-fill: #fff; -fx-font-size: 13;" styleClass="dash-bord-text2" text="You have over 20 000 vistor in the">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="245.0" layoutY="139.0" prefHeight="19.0" prefWidth="190.0" style="-fx-text-fill: #fff; -fx-font-size: 13;" styleClass="dash-bord-text2" text=" lost 10 day.keep it up!">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="271.0" fitWidth="268.0" layoutX="20.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/Icon/—Pngtree—daily%20shopping%20cart_5398373.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="213.0" fitWidth="214.0" layoutX="491.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/Icon/—Pngtree—shopping%20cart_1459647.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="85.0" layoutY="361.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #fff; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="81.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 16;" styleClass="dash-bord-text2" text="Favorite">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="318.0" layoutY="360.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #fff; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="28.0" layoutY="82.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 16;" styleClass="dash-bord-text2" text="All Items">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="540.0" layoutY="363.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #fff; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #000;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="27.0" layoutY="82.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 16;" styleClass="dash-bord-text2" text="All Order">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="39.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="66.0" layoutY="561.0" prefHeight="28.0" prefWidth="160.0" style="-fx-text-fill: #000; -fx-font-size: 23;" styleClass="dash-bord-text" text="Recent Sold">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="93.0" layoutY="634.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="81.0" prefHeight="25.0" prefWidth="120.0" style="-fx-text-fill: #000; -fx-font-size: 16;" styleClass="dash-bord-text2" text="Last Order QTY">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="312.0" layoutY="634.0" prefHeight="125.0" prefWidth="171.0" style="-fx-background-color: #E7EBE8; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="81.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 16;" styleClass="dash-bord-text2" text="Today Order">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="40.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #000; -fx-font-size: 30;" styleClass="dash-bord-text" text="+83">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="527.0" layoutY="648.0" prefHeight="109.0" prefWidth="256.0" style="-fx-background-color: #EFAFAD; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="btn" stylesheets="@../../style/DashboardForm.css">
+               <children>
+                  <Label layoutX="35.0" layoutY="60.0" prefHeight="25.0" prefWidth="90.0" style="-fx-text-fill: #fff; -fx-font-size: 16;" styleClass="dash-bord-text2" text="Today Order">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="21.0" prefHeight="37.0" prefWidth="143.0" style="-fx-text-fill: #fff; -fx-font-size: 20;" styleClass="dash-bord-text" text="Most Sale Item">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Pane fx:id="pane" prefHeight="800.0" prefWidth="1227.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
