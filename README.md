@@ -21,9 +21,17 @@
   <i>Lombok</i><br>
   <i>Mysql-connector-java</i><br>
   <i>Jasperreports</i>
+
 </ul>
 
- 
+![Screenshot 2023-10-13 212148](https://github.com/sasindumalshan/Fashion-Fiesta/assets/109432637/82b5c726-ec61-4f58-8d6b-c42b68e46416)
+![Screenshot 2023-10-13 212213](https://github.com/sasindumalshan/Fashion-Fiesta/assets/109432637/71c6fbfe-b357-4758-91ce-631f308dd143)
+
+![Screenshot 2023-10-13 212026](https://github.com/sasindumalshan/Fashion-Fiesta/assets/109432637/6ce1e7ff-10a7-47c4-829b-6f77e85424e4)
+
+
+ ![Screenshot 2023-10-13 212238](https://github.com/sasindumalshan/Fashion-Fiesta/assets/109432637/ac5f6770-cf06-45a1-9805-2ef753329c37)
+
 
 
 
